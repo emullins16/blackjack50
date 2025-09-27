@@ -22,12 +22,13 @@
    - "Player" is an overall class that is able to recieve cards, view cards, hit to be dealt more cards, and stand to "end their turn". The score for each player is also held here instead of in main.
    - "Dealer" is a class that inherits the logic of player, but extends it with extra code to implement teh dealer logic.
 
-   There are also five total secondary functions in this project.
+   There are also seven total secondary functions in this project.
    - "integriddy" A coding artifact from testing the validity of the early decks. At this point, it is obselete. (IF something strange happens and cards are missing, the code exits to sort it out.)
    - "handvalue" allows the users to be able to see a value for the hand, instead of having to do the math in their head. It creates an empty set and adds values from each card.
    - "validhand" is extra handling for aces so that when a hand with an ace has two values and one goes over 21, it allows the user to play with the hand values below 21.
    - "game_turn" handles all of the actions and printing as the game goes on. A lot of the printed text and user decisions (via input). Also, player busting is handled here. After the player acts, then the dealer will.
    - "game_winner" takes the values of the hands after game_turn() is over and processes them. Whichever hands are higher will be noted as a winner and a point will be added to their class!
+   - "mk_card and print_hand" both handle similar tasks. These functions create ASCII art for the player's hand and allow for more interesting gameplay! 
 
    #### Regarding main():
 
