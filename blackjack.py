@@ -302,10 +302,10 @@ def game_winner(player, dealer):
             print("Dealer Wins!")
             dealer.score += 1
         elif finalhandd is None and finalhandp:
-            print("Player Wins!")
+            print(f"{player.name} Wins!")
             player.score += 1
         elif finalhandp > finalhandd:
-            print(f"Player Wins! {finalhandp} > {finalhandd}")
+            print(f"{player.name} Wins! {finalhandp} > {finalhandd}")
             player.score += 1
         elif finalhandd > finalhandp:
             print(f"Dealer Wins! {finalhandd} > {finalhandp}")
@@ -360,3 +360,4 @@ if __name__ == "__main__":
         main()
     except (EOFError, KeyboardInterrupt):
         sys.exit(0)
+
